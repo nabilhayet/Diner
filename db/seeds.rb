@@ -8,5 +8,6 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-User.create!(name: 'Nabil Hayet', email: 'xyz@yahoo.com', address: '23 penn st', contact: '123-456-789')
-Booking.create!(date: '2023-08-29' , time: '06:45:50' , table_num: 1, user_id: 1)
+#User.create!(name: 'Nabil Hayet', email: 'xyz@yahoo.com', address: '23 penn st', contact: '123-456-789')
+Restaurant.create!(name: 'Chubby Burger', street: 'Steinway ST', city: 'LIC', zipcode: 11101)
+Booking.create!(date: '2023-08-29' , time: '06:45:50' , table_num: 1, user_id: 1, restaurant_id: 1)

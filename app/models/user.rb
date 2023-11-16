@@ -1,5 +1,6 @@
 class User < ApplicationRecord
     has_many :bookings
+    has_many :restaurants, through: :bookings
     accepts_nested_attributes_for :bookings
 
     validates :name, presence: true
@@ -8,5 +9,4 @@ class User < ApplicationRecord
     validates :address, uniqueness: true
     validates :contact, presence: true
     validates :contact, uniqueness: true
-    validates :contact, numericality: { only_integer: true }
 end
